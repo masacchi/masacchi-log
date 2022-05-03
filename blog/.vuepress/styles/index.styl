@@ -1,0 +1,41 @@
+@require './font.styl'
+
+$fontFamily = "Noto Sans JP"
+
+// override @vuepress/theme-blog/styles/index.styl
+body
+  font-family $fontFamily
+h1, h2, h3, h4, h5, h6
+  font-family $fontFamily
+code, kbd, .line-number
+  font-family source-code-pro,  $fontFamily, monospace
+
+// override @vuepress/theme-blog/global-components/BaseListLayout.vue
+header.ui-post-title
+  font-family $fontFamily
+
+// override @vuepress/theme-blog/components/Header.vue
+.header-wrapper
+  .title
+    text-transform none
+    a
+      font-family $fontFamily
+  .header-right-wrap
+    .nav
+      .nav-item
+        a
+          font-family $fontFamily
+    .search-box
+      font-family $fontFamily
+
+// override @vuepress/theme-blog/components/MobileHeader.vue
+.mobile-header-bar
+  font-family $fontFamily !important
+#mobile-header
+    .mobile-home-link
+      text-transform none !important
+      font-fsamily $fontFamily !important
+
+// override @vuepress/theme-blog/layouts/Post.vue
+.vuepress-blog-theme-content
+  font-family $fontFamily !important

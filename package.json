@@ -1,0 +1,17 @@
+{
+  "name": "masacchi-log",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "blog:dev": "vuepress dev blog",
+    "blog:build": "vuepress build blog"
+  },
+  "author": "masacchi",
+  "devDependencies": {
+    "@vuepress/plugin-blog": "^1.9.4",
+    "@vuepress/plugin-google-analytics": "^1.9.7",
+    "@vuepress/theme-blog": "^2.3.3",
+    "vuepress": "^1.9.2"
+  }
+}
